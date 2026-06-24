@@ -98,15 +98,64 @@ header nav ul li a:hover {
 }
 
 
+/* Estilização Geral do Rodapé */
 footer {
-    background-color: #1a1a2e;
-    color: white;
+    background-color: #1a1a2e; /* Mantém o fundo escuro atual */
+    padding: 60px 20px 30px 20px; /* Mais espaço interno para dar respiro */
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-footer a {
-    color: #e94560;
+/* Container que centraliza os botões usando Flexbox */
+.social-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    gap: 25px;               /* Espaçamento grande entre os dois botões */
+    margin-bottom: 40px;     /* Afasta os botões do texto debaixo */
+}
+
+/* Estilo Base dos Botões (Maiores e Elegantes) */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;               /* Espaço entre o ícone e o texto */
+    padding: 14px 28px;      /* Botão maior e mais robusto */
+    font-size: 1.1rem;       /* Texto ligeiramente maior */
+    font-weight: 600;
+    color: #ffffff;
     text-decoration: none;
+    border-radius: 8px;      /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.2s;
+}
+
+/* Cores específicas para cada botão */
+.social-btn.github {
+    background-color: #24292e; /* Cor oficial do GitHub */
+}
+
+.social-btn.linkedin {
+    background-color: #0077b5; /* Cor oficial do LinkedIn */
+}
+
+/* Efeito de passar o mouse (Hover) */
+.social-btn:hover {
+    transform: translateY(-4px); /* Botão sobe de leve */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra aumenta */
+}
+
+/* Efeito ao passar o mouse especificamente em cada um */
+.social-btn.github:hover {
+    background-color: #333a42; /* Clareia de leve o GitHub */
+}
+
+.social-btn.linkedin:hover {
+    background-color: #008bd2; /* Clareia de leve o LinkedIn */
+}
+
+/* Texto de direitos autorais no fundo */
+.copyright {
+    color: #a0aec0; /* Tom cinza mais suave para não brigar com os botões */
+    font-size: 0.9rem;
 }
