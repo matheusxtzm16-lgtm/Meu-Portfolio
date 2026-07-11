@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links do menu */
+}
+
 body {
     background-color: #f4f7f6;
     color: #333;
@@ -47,7 +51,7 @@ header nav ul li a:hover {
 /* Seção Hero */
 .hero-section {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px; /* Um pouco mais de espaço para destacar */
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
 }
@@ -55,6 +59,31 @@ header nav ul li a:hover {
 .hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+/* Destaque para o seu nome */
+.highlight {
+    color: #e94560;
+}
+
+/* Botão de Chamada na Intro (CTA) */
+.btn-cta {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #e94560;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #e94560;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(233, 69, 96, 0.4);
 }
 
 /* Projetos com Grid Responsivo */
@@ -100,8 +129,8 @@ header nav ul li a:hover {
 
 /* Estilização Geral do Rodapé */
 footer {
-    background-color: #1a1a2e; /* Mantém o fundo escuro atual */
-    padding: 60px 20px 30px 20px; /* Mais espaço interno para dar respiro */
+    background-color: #1a1a2e;
+    padding: 60px 20px 30px 20px;
     text-align: center;
     margin-top: 60px;
 }
@@ -109,53 +138,52 @@ footer {
 /* Container que centraliza os botões usando Flexbox */
 .social-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
     align-items: center;
-    gap: 25px;               /* Espaçamento grande entre os dois botões */
-    margin-bottom: 40px;     /* Afasta os botões do texto debaixo */
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
-/* Estilo Base dos Botões (Maiores e Elegantes) */
+/* Estilo Base dos Botões */
 .social-btn {
     display: inline-flex;
     align-items: center;
-    gap: 12px;               /* Espaço entre o ícone e o texto */
-    padding: 14px 28px;      /* Botão maior e mais robusto */
-    font-size: 1.1rem;       /* Texto ligeiramente maior */
+    gap: 12px;
+    padding: 14px 28px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 8px;      /* Bordas levemente arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s, background-color 0.3s, box-shadow 0.2s;
 }
 
 /* Cores específicas para cada botão */
 .social-btn.github {
-    background-color: #24292e; /* Cor oficial do GitHub */
+    background-color: #24292e;
 }
 
 .social-btn.linkedin {
-    background-color: #0077b5; /* Cor oficial do LinkedIn */
+    background-color: #0077b5;
 }
 
 /* Efeito de passar o mouse (Hover) */
 .social-btn:hover {
-    transform: translateY(-4px); /* Botão sobe de leve */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra aumenta */
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Efeito ao passar o mouse especificamente em cada um */
 .social-btn.github:hover {
-    background-color: #333a42; /* Clareia de leve o GitHub */
+    background-color: #333a42;
 }
 
 .social-btn.linkedin:hover {
-    background-color: #008bd2; /* Clareia de leve o LinkedIn */
+    background-color: #008bd2;
 }
 
 /* Texto de direitos autorais no fundo */
 .copyright {
-    color: #a0aec0; /* Tom cinza mais suave para não brigar com os botões */
+    color: #a0aec0;
     font-size: 0.9rem;
 }
