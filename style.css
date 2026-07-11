@@ -187,3 +187,7 @@ footer {
     color: #a0aec0;
     font-size: 0.9rem;
 }
+/* Classe aplicada via JavaScript para destacar o card clicado */
+.project-card.active {
+    border: 2px solid #e94560;
+}
