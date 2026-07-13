@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus | Portfólio</title>
+
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6062/6062646.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,122 +19,170 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="sobre" class="hero-section">
-        <h1>Olá, eu me chamo <span class="highlight">David Matheus</span></h1>
-        <p>Desenvolvedor Front-end focado em criar soluções web modernas e eficientes.</p>
-        <a href="#projetos" class="btn-cta">Conhecer Meu Trabalho</a>
-    </section>
-    <section id="habilidades" class="skills-section">
-        <h2>Minhas Tecnologias & Certificações</h2>
-        <div class="skills-container">
-            <!-- HTML -->
-            <div class="skill-card">
-                <div class="skill-info">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <a href="Certificado - Dev Club - David Matheus - HTML.png" target="_blank" class="badge-cert">
-                    <i class="fa-solid fa-award"></i> Ver Certificado
-                </a>
+    <main>
+        <!-- Seção Hero -->
+        <section id="sobre" class="hero-section">
+            <div class="hero-content">
+                <h1>Olá, eu me chamo <span class="highlight">David Matheus</span></h1>
+                <p>Desenvolvedor Front-end focado em criar soluções web modernas e eficientes.</p>
+                <a href="#projetos" class="btn-cta">Conhecer Meu Trabalho</a>
             </div>
+        </section>
 
-            <!-- CSS -->
-            <div class="skill-card">
-                <div class="skill-info">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS3 Intermediário & Avançado</span>
-                </div>
-                <div class="cert-links-group">
-                    <a href="Certificado - Dev Club - David Matheus - CSS Intermediário.png" target="_blank" class="badge-cert">
-                        <i class="fa-solid fa-award"></i> Intermediário
-                    </a>
-                    <a href="Certificado - Dev Club - David Matheus - CSS - Display GRID.pdf" target="_blank" class="badge-cert">
-                        <i class="fa-solid fa-award"></i> Avançado (Grid)
+        <!-- Seção de Habilidades -->
+        <section id="habilidades" class="skills-section">
+            <h2>Minhas Tecnologias & Certificações</h2>
+            <div class="skills-container">
+
+                <!-- HTML -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <i class="fa-brands fa-html5 html-icon"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <a href="Certificado - Dev Club - David Matheus - HTML.png" target="_blank" class="badge-cert">
+                        <i class="fa-solid fa-award"></i> Ver Certificado
                     </a>
                 </div>
-            </div>
 
-            <!-- JavaScript -->
-            <div class="skill-card">
-                <div class="skill-info">
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript Essencial & Avançado</span>
+                <!-- CSS -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <i class="fa-brands fa-css3-alt css-icon"></i>
+                        <span>CSS3 Intermediário & Avançado</span>
+                    </div>
+                    <div class="cert-links-group">
+                        <a href="Certificado - Dev Club - David Matheus - CSS Intermediário.png" target="_blank"
+                            class="badge-cert">
+                            <i class="fa-solid fa-award"></i> Intermediário
+                        </a>
+                        <a href="Certificado - Dev Club - David Matheus - CSS - Display GRID.pdf" target="_blank"
+                            class="badge-cert">
+                            <i class="fa-solid fa-award"></i> Avançado (Grid)
+                        </a>
+                    </div>
                 </div>
-                <div class="cert-links-group">
-                    <a href="Certificado - Dev Club - David Matheus - JavaScript pt. V - A Nova Ordem de Dados.pdf" target="_blank" class="badge-cert">
-                        <i class="fa-solid fa-award"></i> Essencial
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <i class="fa-brands fa-js js-icon"></i>
+                        <span>JavaScript Essencial & Avançado</span>
+                    </div>
+                    <div class="cert-links-group">
+                        <a href="Certificado - Dev Club - David Matheus - JavaScript pt. V - A Nova Ordem de Dados.pdf"
+                            target="_blank" class="badge-cert">
+                            <i class="fa-solid fa-award"></i> Essencial
+                        </a>
+                        <a href="Certificado - Dev Club - David Matheus - JavaScript pt. VI - A Ascensão do Async_Await.pdf"
+                            target="_blank" class="badge-cert">
+                            <i class="fa-solid fa-award"></i> Avançado (Async)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <i class="fa-brands fa-git-alt git-icon"></i>
+                        <span>Git & GitHub</span>
+                    </div>
+                    <a href="Certificado - Dev Club - David Matheus - Git & GitHub.png" target="_blank"
+                        class="badge-cert">
+                        <i class="fa-solid fa-award"></i> Ver Certificado
                     </a>
-                    <a href="Certificado - Dev Club - David Matheus - JavaScript pt. VI - A Ascensão do Async_Await.pdf" target="_blank" class="badge-cert">
-                        <i class="fa-solid fa-award"></i> Avançado (Async)
+                </div>
+
+                <!-- Node.js -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <i class="fa-brands fa-node-js node-icon"></i>
+                        <span>Node.js (Back-end)</span>
+                    </div>
+                    <a href="Certificado - Dev Club - David Matheus - Node.pdf" target="_blank" class="badge-cert">
+                        <i class="fa-solid fa-award"></i> Ver Certificado
                     </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Git & GitHub -->
-            <div class="skill-card">
-                <div class="skill-info">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <span>Git & GitHub</span>
+        <!-- Seção de Projetos -->
+        <section id="projetos" class="projects-section">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+
+                <!-- Projeto 01 -->
+                <div class="project-card">
+                    <h3>☀️ Amigo de Patas: Edição Piauí</h3>
+                    <p>Plataforma inteligente para monitoramento de vacinas e cuidados preventivos essenciais para cães
+                        e gatos enfrentarem o clima quente da nossa região. Desenvolvido com Tailwind CSS e JavaScript
+                        dinâmico.</p>
+                    <div class="project-buttons">
+                        <a href="https://matheusxtzm16-lgtm.github.io/portal-pet/" class="btn-project btn-primary"
+                            target="_blank">Ver Site</a>
+                        <a href="https://github.com/matheusxtzm16-lgtm/portal-pet" class="btn-project btn-secondary"
+                            target="_blank">Código</a>
+                    </div>
                 </div>
-                <a href="Certificado - Dev Club - David Matheus - Git & GitHub.png" target="_blank" class="badge-cert">
-                    <i class="fa-solid fa-award"></i> Ver Certificado
-                </a>
-            </div>
 
-            <!-- Node.js -->
-            <div class="skill-card">
-                <div class="skill-info">
-                    <i class="fa-brands fa-node-js"></i>
-                    <span>Node.js (Back-end)</span>
+                <!-- Projeto 02 (Totalmente Corrigido!) -->
+                <div class="project-card">
+                    <h3>🛠️ Clockwise Hardware: Simulador</h3>
+                    <p>Aplicação interativa voltada para entusiastas de PC. Permite explorar componentes técnicos, verificar benchmarks em tempo real e simular a performance combinada do setup através de manipulação de estado avançada.</p>
+                    <div class="project-buttons">
+                        <a href="https://matheusxtzm16-lgtm.github.io/ClockWise-Hardware/" class="btn-project btn-primary"
+                            target="_blank">Ver Site</a>
+                        <a href="https://github.com/matheusxtzm16-lgtm/ClockWise-Hardware" class="btn-project btn-secondary"
+                            target="_blank">Código</a>
+                    </div>
                 </div>
-                <a href="Certificado - Dev Club - David Matheus - Node.pdf" target="_blank" class="badge-cert">
-                    <i class="fa-solid fa-award"></i> Ver Certificado
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <section id="projetos" class="projects-section">
-        <h2>Meus Projetos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Vacinação de Animais domésticos</h3>
-                <p>Uma aplicação para conscientização e controle de vacinação de pets, desenvolvida com uma interface
-                    intuitiva e moderna utilizando HTML, CSS e JavaScript.</p>
-                <a href="https://matheusxtzm16-lgtm.github.io/projeto-vacinacao-pets/" class="btn-project"
-                    target="_blank">Ver Site</a>
             </div>
-            <div class="project-card">
-                <h3>Projeto 02</h3>
-                <p>Outro projeto legal que você desenvolveu ou está aprimorando.</p>
-                <a href="https://github.com/matheusxtzm16-lgtm/projeto-02" class="btn-project" target="_blank">Ver
-                    Código</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
+    <!-- Rodapé / Contato (Totalmente Restaurado!) -->
     <footer id="contato">
+        <h2>Vamos construir algo juntos?</h2>
+        <p class="footer-subtitle">Entre em contato comigo pelas minhas redes profissionais ou canais diretos.</p>
+
         <div class="social-container">
             <a href="https://github.com/matheusxtzm16-lgtm" target="_blank" rel="noopener noreferrer"
                 class="social-btn github" aria-label="Acessar meu perfil do GitHub">
-                <i class="fa-brands fa-github"></i> MEU GitHub
+                <i class="fa-brands fa-github"></i> GitHub
             </a>
 
             <a href="https://www.linkedin.com/in/david-matheus-matheus-a12752293/?skipRedirect=true" target="_blank"
                 rel="noopener noreferrer" class="social-btn linkedin" aria-label="Acessar meu perfil do LinkedIn">
-                <i class="fa-brands fa-linkedin"></i> MEU LinkedIn
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/solucoes_webdesign" target="_blank" rel="noopener noreferrer"
+                class="social-btn instagram" aria-label="Acessar meu Instagram Profissional">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://wa.me/5586998507809?text=Ol%C3%A1%20Matheus%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria de%20conversar%21"
+                target="_blank" rel="noopener noreferrer" class="social-btn whatsapp"
+                aria-label="Falar comigo no WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="mailto:matheusweb.designerdigital@gmail.com" class="social-btn gmail"
+                aria-label="Enviar um e-mail profissional">
+                <i class="fa-solid fa-envelope"></i> E-mail
             </a>
         </div>
 
         <p class="copyright">&copy; 2026 - Desenvolvido por Matheus.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
